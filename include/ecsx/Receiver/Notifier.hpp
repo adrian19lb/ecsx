@@ -1,9 +1,11 @@
 #ifndef PROCESORNOTIFIER_HPP_INCLUDED
 #define PROCESORNOTIFIER_HPP_INCLUDED
 
-#include <Subscriber.hpp>
-
 namespace ecsx::receiver {
+    
+    template<typename T>
+    class Subscriber;
+   
     template<typename T>
     class Notifier {
     public:
