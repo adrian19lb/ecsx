@@ -2,3 +2,7 @@ project(ecsx-core)
 
 set(CMAKE_MAJOR_VERSION 1)
 set(CMAKE_MINOR_VERSION 0)
+
+# Create component lib
+add_library(component "")
+add_subdirectory(Component)
