@@ -16,4 +16,7 @@ target_sources(component
         ${INCROOT}/ComponentsHolder.hpp
         ${INCROOT}/ComponentsHolder.inl
         ${SRCDIR}/ComponentsHolder.cpp
+    PUBLIC
+        ${INCROOT}/Bitset.hpp
+        ${INCROOT}/Bitset.inl
 )
