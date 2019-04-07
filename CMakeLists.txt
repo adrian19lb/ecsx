@@ -4,3 +4,6 @@ project(ecsx)
 set(CMAKE_MAJOR_VERSION 1)
 set(CMAKE_MINOR_VERSION 0)
 set(CMAKE_PATCH_VERSION 0)
+
+# Add ecsx-core project subdirectory
+add_subdirectory(src/ecsx)
