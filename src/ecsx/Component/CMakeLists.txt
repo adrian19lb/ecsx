@@ -21,4 +21,7 @@ target_sources(component
         ${INCROOT}/Bitset.inl
         ${INCROOT}/Entity.hpp
         ${SRCDIR}/Entity.cpp
+        ${INCROOT}/ComponentsManager.hpp
+        ${INCROOT}/ComponentsManager.inl
+        ${SRCDIR}/ComponentsManager.cpp
 )
