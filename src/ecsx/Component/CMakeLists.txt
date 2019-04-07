@@ -9,5 +9,7 @@ target_sources(component
     PUBLIC
         ${INCROOT}/BaseComponent.hpp
         ${INCROOT}/Component.hpp
-        ${SRCDIR}/BaseComponent.cpp
+        ${INCROOT}/Component.hpp
+        ${INCROOT}/PositionComponent.hpp
+        ${INCROOT}/VelocityComponent.hpp
 )
