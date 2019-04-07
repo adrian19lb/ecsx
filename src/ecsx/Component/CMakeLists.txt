@@ -19,4 +19,6 @@ target_sources(component
     PUBLIC
         ${INCROOT}/Bitset.hpp
         ${INCROOT}/Bitset.inl
+        ${INCROOT}/Entity.hpp
+        ${SRCDIR}/Entity.cpp
 )
