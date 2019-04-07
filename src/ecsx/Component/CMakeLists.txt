@@ -12,4 +12,8 @@ target_sources(component
         ${INCROOT}/Component.hpp
         ${INCROOT}/PositionComponent.hpp
         ${INCROOT}/VelocityComponent.hpp
+    PUBLIC
+        ${INCROOT}/ComponentsHolder.hpp
+        ${INCROOT}/ComponentsHolder.inl
+        ${SRCDIR}/ComponentsHolder.cpp
 )
