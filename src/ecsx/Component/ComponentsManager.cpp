@@ -12,7 +12,7 @@ namespace ecsx::component {
     }
 
     void ComponentsManager::add(receiver::Subscriber<Entity>* subscriber) {
-        subscribers.emplace_back(subscriber)
+        subscribers.emplace_back(subscriber);
     }
 
     void ComponentsManager::remove(receiver::Subscriber<Entity>* subscriber) {
