@@ -1,7 +1,7 @@
 #ifndef SUBSCRIBER_HPP_INCLUDED
 #define SUBSCRIBER_HPP_INCLUDED
 
-namespace ecsv::receiver {
+namespace ecsx::receiver {
 
     template<typename T>
     class Subscriber {

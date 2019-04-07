@@ -3,7 +3,7 @@
 
 #include <Subscriber.hpp>
 
-namespace ecsv::receiver {
+namespace ecsx::receiver {
     template<typename T>
     class Notifier {
     public:
