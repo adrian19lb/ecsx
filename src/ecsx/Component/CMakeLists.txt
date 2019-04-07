@@ -4,3 +4,10 @@ set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(component PUBLIC
     ${INCROOT}    
 )
+
+target_sources(component
+    PUBLIC
+        ${INCROOT}/BaseComponent.hpp
+        ${INCROOT}/Component.hpp
+        ${SRCDIR}/BaseComponent.cpp
+)
