@@ -1,7 +1,6 @@
 # Directories
 tmp/
 build/
-third_party/
 
 # Prerequisites
 *.d
