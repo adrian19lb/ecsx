@@ -20,9 +20,11 @@ mark_as_advanced(BUILD_GMOCK BUILD_GTEST BUILD_SHARED_LIBS
         gtest_disable_pthreads gtest_force_shared_crt gtest_hide_internal_symbols
 )
     
-macro(gtest_add_test TESTNAME)
+macro(gtest_add_test TESTNAME TESTED_LIB)
     add_executable(${TESTNAME} ${ARGN})
-    target_link_libraries(${TESTNAME} PRIVATE gtest gmock gtest_main)
+    target_link_libraries(${TESTNAME} PUBLIC
+        gtest gmock gtest_main ${TESTED_LIB}
+    )
     add_test(NAME ${TESTNAME} COMMAND ${TESTNAME})
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
 endmacro()
