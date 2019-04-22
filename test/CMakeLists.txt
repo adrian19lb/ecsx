@@ -22,6 +22,7 @@ mark_as_advanced(BUILD_GMOCK BUILD_GTEST BUILD_SHARED_LIBS
     
 macro(gtest_add_test TESTNAME TESTED_LIB)
     add_executable(${TESTNAME} ${ARGN})
+    target_include_directories(${TESTNAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
     target_link_libraries(${TESTNAME} PUBLIC
         gtest gmock gtest_main ${TESTED_LIB}
     )
