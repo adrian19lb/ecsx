@@ -1,5 +1,6 @@
 #include <ComponentsManager.hpp>
 #include <Subscriber.hpp>
+#include <algorithm>
 
 namespace ecsx::component {
 
@@ -16,6 +17,9 @@ namespace ecsx::component {
     }
 
     void ComponentsManager::remove(receiver::Subscriber<Entity>* subscriber) {
+        subscribers.erase( std::remove_if( subscribers.begin(), subscribers.end(), [&subscriber](auto itr) {
+                            return itr == subscriber;
+                        }), subscribers.end() );
     }
 
     void ComponentsManager::notify(const Entity& entity) {
