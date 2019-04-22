@@ -8,6 +8,7 @@ target_include_directories(component PUBLIC
 target_sources(component
     PUBLIC
         ${INCROOT}/BaseComponent.hpp
+        ${SRCDIR}/BaseComponent.cpp
         ${INCROOT}/Component.hpp
         ${INCROOT}/Component.hpp
         ${INCROOT}/PositionComponent.hpp
