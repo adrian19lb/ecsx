@@ -16,7 +16,7 @@ namespace ecsx::component {
     
     class ComponentsManager : public receiver::Notifier<Entity> {
     public:
-        template<typename ComponentType> Entity& attach(Entity& entity);
+        template<typename ComponentType> void attach(Entity& entity);
     private:
         bool checkIfEntityAlreadyExist(Entity entity);
         template<typename ComponentType> void attachComponentToEntity(const Entity& entity);

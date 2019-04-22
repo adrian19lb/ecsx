@@ -1,6 +1,6 @@
 namespace ecsx::component {
 
-    template<typename ComponentType> Entity& ComponentsManager::attach(Entity& entity) {
+    template<typename ComponentType> void ComponentsManager::attach(Entity& entity) {
         auto componentId = ComponentType::id;
         entity.componentsBitset[componentId]= true;
         attachComponentToEntity<ComponentType>(entity);
