@@ -7,6 +7,7 @@ namespace ecsx::component {
 
     struct VelocityComponent : public Component<VelocityComponent> {
     public:
+        VelocityComponent() = default;
         VelocityComponent(float x, float y) {
                 this->x = x;
                 this->y = y;

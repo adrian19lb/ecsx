@@ -7,6 +7,7 @@ namespace ecsx::component {
 
     struct PositionComponent : public Component<PositionComponent> {
     public:
+        PositionComponent() = default;
         PositionComponent(float x, float y) {
             this->x = x;
             this->y = y;
