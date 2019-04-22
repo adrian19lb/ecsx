@@ -28,3 +28,5 @@ macro(gtest_add_test TESTNAME TESTED_LIB)
     add_test(NAME ${TESTNAME} COMMAND ${TESTNAME})
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
 endmacro()
+
+add_subdirectory(Component)
