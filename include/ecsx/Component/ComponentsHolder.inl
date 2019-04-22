@@ -2,7 +2,7 @@
 
 namespace ecsx::component {
 
-    template<typename ComponentType, typename... TArg> void ComponentsHolder::attach(TArg... arg) {
+    template<typename ComponentType, typename... TArg> void ComponentsHolder::attach(TArg&&... arg) {
         check<ComponentType>();
         auto newComponent = std::make_unique<ComponentType>( std::forward<TArg>(arg)... ) ;
         componentsArray[ComponentType::id] = std::move(newComponent);

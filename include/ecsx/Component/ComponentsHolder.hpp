@@ -13,7 +13,7 @@ namespace ecsx::component {
     private:
         static const int MAX_COMPONENTS_NUMBER = 64;
     public:
-        template<typename ComponentType, typename... TArg> void attach(TArg... args);
+        template<typename ComponentType, typename... TArg> void attach(TArg&&... args);
     private:
         template<typename ComponentType> void check();
         template<typename ComponentType> void checkIfIsBaseOf();
