@@ -24,7 +24,7 @@ macro(gtest_add_test TESTNAME TESTED_LIB)
     add_executable(${TESTNAME} ${ARGN})
     target_include_directories(${TESTNAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
     target_link_libraries(${TESTNAME} PUBLIC
-        gtest gmock gtest_main ${TESTED_LIB}
+        gtest gmock gtest_main ${TESTED_LIB} pthread
     )
     add_test(NAME ${TESTNAME} COMMAND ${TESTNAME})
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
